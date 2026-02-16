@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KAGOSHIMA AI/DX CONNECT 2026</title>
-  <meta name="description" content="AI/DXスタートアップと鹿児島の地元企業をつなぐマッチングイベント。2026年4月30日開催。">
+  <meta name="description" content="AI/DXスタートアップと鹿児島の地元企業をつなぐマッチングイベント。2026年4月開催。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -485,15 +485,23 @@
     }
 
     .speaker-icon {
-      width: 64px;
-      height: 64px;
+      width: 80px;
+      height: 80px;
       margin: 0 auto 20px;
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+      background: rgba(255, 255, 255, 0.06);
       border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.8rem;
+      overflow: hidden;
+      padding: 12px;
+    }
+
+    .speaker-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .speaker-category {
@@ -1116,7 +1124,7 @@
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <div class="hero-badge">2026.04.30 THU</div>
+      <div class="hero-badge">2026.04.○○</div>
       <h1 class="hero-title">
         <span class="gradient">KAGOSHIMA</span><br>
         <span class="gradient">AI/DX CONNECT</span><br>
@@ -1131,7 +1139,7 @@
           <div class="hero-meta-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-          2026年4月30日（木）
+          2026年4月○○日
         </div>
         <div class="hero-meta-item">
           <div class="hero-meta-icon">
@@ -1199,21 +1207,21 @@
 
       <div class="speakers-grid">
         <div class="speaker-card fade-up">
-          <div class="speaker-icon">&#x23F0;</div>
+          <div class="speaker-icon"><img src="https://timee.co.jp/_assets/reHeader-logo.DCBMN3ti.svg" alt="タイミー ロゴ"></div>
           <span class="speaker-category cat-work">WorkTech</span>
           <h3 class="speaker-name">タイミー</h3>
           <p class="speaker-company">株式会社タイミー（東証グロース上場）</p>
           <p class="speaker-desc">働きたい時間と働いてほしい時間をマッチングするスキマバイトサービス。面接・履歴書なしで即日働ける仕組みを提供し、ユーザー数700万人超、導入事業者数98,000社超の実績を持つ。</p>
         </div>
         <div class="speaker-card fade-up">
-          <div class="speaker-icon">&#x1F916;</div>
+          <div class="speaker-icon"><img src="https://zeals.ai/jp/wp-content/themes/zeals2021-child/assets/images/logo_zeals_white.svg" alt="ZEALS ロゴ"></div>
           <span class="speaker-category cat-ai">AI Chat</span>
           <h3 class="speaker-name">ZEALS</h3>
           <p class="speaker-company">株式会社ZEALS（ジールス）</p>
           <p class="speaker-desc">LINEやInstagramなどのチャットインターフェースを活用し、生成AIによる接客体験のデジタル化を推進。AIエージェント事業およびチャットコマース事業を展開し、エンタープライズ企業を中心に400社以上に導入。</p>
         </div>
         <div class="speaker-card fade-up">
-          <div class="speaker-icon">&#x1F393;</div>
+          <div class="speaker-icon"><img src="https://storage.googleapis.com/production-os-assets/assets/1e0cab76-faf7-4a27-8361-d1d6e050c793" alt="ABABA ロゴ"></div>
           <span class="speaker-category cat-hr">HRTech</span>
           <h3 class="speaker-name">ABABA</h3>
           <p class="speaker-company">株式会社ABABA</p>
@@ -1336,7 +1344,7 @@
           </div>
           <div class="outline-row">
             <div class="outline-label">日時</div>
-            <div class="outline-value">2026年4月30日（木）14:00〜16:30</div>
+            <div class="outline-value">2026年4月○○日 14:00〜16:30</div>
           </div>
           <div class="outline-row">
             <div class="outline-label">会場</div>
