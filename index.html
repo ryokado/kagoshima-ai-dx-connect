@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KAGOSHIMA AI/DX CONNECT 2026</title>
   <meta name="description" content="AI/DXスタートアップと鹿児島の地元企業をつなぐマッチングイベント。2026年4月開催。">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -1085,6 +1086,100 @@
       }
     }
 
+    /* ===== AI背景文字（固定表示） ===== */
+    .bg-text-fixed {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(20rem, 45vw, 40rem);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: transparent;
+      background: linear-gradient(180deg, rgba(96, 165, 250, 0.1) 0%, rgba(139, 92, 246, 0.04) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    /* ===== Organizers ===== */
+    .organizers {
+      padding: 80px 0;
+      border-top: 1px solid rgba(96, 165, 250, 0.07);
+      border-bottom: 1px solid rgba(96, 165, 250, 0.07);
+    }
+
+    .organizers-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    .organizers-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .organizers-role {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #60a5fa;
+    }
+
+    .organizers-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 32px;
+      min-width: 240px;
+      min-height: 100px;
+    }
+
+    .organizers-logo-wrap img {
+      max-height: 80px;
+      width: auto;
+      max-width: 200px;
+    }
+
+    .organizers-logo-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: 0.02em;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .organizers-divider {
+      width: 1px;
+      height: 120px;
+      background: rgba(96, 165, 250, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .organizers-inner {
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .organizers-divider {
+        width: 120px;
+        height: 1px;
+      }
+    }
+
     /* ===== Mobile nav overlay ===== */
     .nav-overlay {
       display: none;
@@ -1101,6 +1196,9 @@
 </head>
 <body>
 
+  <!-- AI背景文字（固定） -->
+  <div class="bg-text-fixed" aria-hidden="true">AI</div>
+
   <!-- ===== Header ===== -->
   <header class="header" id="header">
     <div class="header-inner">
@@ -1108,6 +1206,7 @@
       <nav class="header-nav" id="headerNav">
         <a href="#about">About</a>
         <a href="#speakers">Speakers</a>
+        <a href="#track-record">Track Record</a>
         <a href="#program">Program</a>
         <a href="#outline">Outline</a>
         <a href="#entry" class="btn-primary">参加申込</a>
@@ -1242,6 +1341,7 @@
 
       <div class="track-record-grid">
         <div class="track-record-card fade-up">
+      
           <span class="track-record-tag">WorkTech × 地方企業</span>
           <h3 class="track-record-company">株式会社タイミー</h3>
           <p class="track-record-desc">スキマバイトマッチングサービス「タイミー」を福岡の地元企業に紹介。飲食・小売・物流など幅広い業種で人手不足の課題解決に貢献し、福岡エリアでの導入企業拡大を支援。</p>
@@ -1367,12 +1467,34 @@
             <div class="outline-value">
               AI/DXスタートアップ企業<br>
               鹿児島県内の企業・自治体関係者<br>
-              DX推進に関心のある方
+              DX推進に関心のある方<br>
+              ※ 決裁権をお持ちの方のみ
             </div>
           </div>
           <div class="outline-row">
             <div class="outline-label">定員</div>
-            <div class="outline-value">100名（先着順）</div>
+            <div class="outline-value">40名（先着順）</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Organizers ===== -->
+  <section class="organizers">
+    <div class="container">
+      <div class="organizers-inner fade-up">
+        <div class="organizers-block">
+          <div class="organizers-role">主催</div>
+          <div class="organizers-logo-wrap">
+            <img src="f-ventures-logo.png" alt="F Ventures">
+          </div>
+        </div>
+        <div class="organizers-divider"></div>
+        <div class="organizers-block">
+          <div class="organizers-role">共催</div>
+          <div class="organizers-logo-wrap organizers-logo-text">
+            社会保険労務士法人<br>HRTrust
           </div>
         </div>
       </div>
